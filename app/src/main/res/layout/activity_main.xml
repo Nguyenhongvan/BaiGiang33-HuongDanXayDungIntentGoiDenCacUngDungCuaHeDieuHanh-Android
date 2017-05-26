@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vansuzy.baigiang33_huongdanxaydungintentgoidencacungdungcuahedieuhanh.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Số phone liên lạc:"/>
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nội dung tin nhắn:"/>
+
+    <EditText
+        android:id="@+id/txtTinNhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_weight="0.27"
+        android:text="Xin chào! Nhà ngươi đang ở đâu vậy?"
+        android:gravity="top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnQuaySo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay số"/>
+
+        <Button
+            android:id="@+id/btnGoiLuon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gọi luôn"/>
+
+        <Button
+            android:id="@+id/btnNhanTin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhắn tin"/>
+    </LinearLayout>
+</LinearLayout>
